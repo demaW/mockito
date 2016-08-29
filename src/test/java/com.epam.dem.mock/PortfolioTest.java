@@ -37,6 +37,10 @@ public class PortfolioTest {
         Mockito.when(stockService.getPrice(microsoftStock)).thenReturn(45.00);
 
         double marketValue = portfolio.getMarketValue();
-        Assert.assertTrue( marketValue == 905.00);
+        Assert.assertTrue("Value do not match", marketValue == 905.00);
+
+        Mockito.when(stockService.returnTwo(googleStock)).thenReturn(2.00);
+
+        System.out.println(stockService.returnTwo(googleStock));
     }
 }

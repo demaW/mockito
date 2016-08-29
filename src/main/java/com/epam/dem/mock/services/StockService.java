@@ -4,4 +4,5 @@ import com.epam.dem.mock.object.Stock;
 
 public interface StockService {
     public double getPrice(Stock stock);
+    public double returnTwo(Stock stock);
 }
