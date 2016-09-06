@@ -3,6 +3,6 @@ package com.epam.dem.mock.services;
 import com.epam.dem.mock.object.Stock;
 
 public interface StockService {
-    public double getPrice(Stock stock);
-    public double returnTwo(Stock stock);
+    double getPrice(Stock stock);
+    double returnTwo(Stock stock);
 }
